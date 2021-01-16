@@ -3,7 +3,7 @@ spawn(
     function()
         while true do
             for i, v in pairs(game.Workspace:GetDescendants()) do
-                if v.Name == "Sword" and v.Parent.Name == plr then
+                if v.Name == "CrystalSkull" and v.Parent.Name == plr then
                     function notify(text)
                         game.StarterGui:SetCore(
                             "SendNotification",
@@ -27,7 +27,7 @@ spawn(
     function()
         while true do
             for i, b in pairs(game.Players:GetDescendants()) do
-                if b.Name == "Sword" and b.Parent:IsA("Backpack") and b:IsA("Tool") then
+                if b.Name == "CrystalSkull" and b.Parent:IsA("Backpack") and b:IsA("Tool") then
                     function notify(text)
                         game.StarterGui:SetCore(
                             "SendNotification",
