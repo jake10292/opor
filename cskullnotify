@@ -1,0 +1,49 @@
+local plr = game.Players.LocalPlayer.Name
+spawn(
+    function()
+        while true do
+            for i, v in pairs(game.Workspace:GetDescendants()) do
+                if v.Name == "Sword" and v.Parent.Name == plr then
+                    function notify(text)
+                        game.StarterGui:SetCore(
+                            "SendNotification",
+                            {
+                                Title = "CSkull Alert",
+                                Text = text,
+                                Icon = "",
+                                Duration = 10
+                            }
+                        )
+                    end
+                    wait()
+                    notify(v.Parent.Name .. " is USING a cskull, stop hacking")
+                end
+            end
+            wait(5)
+        end
+    end
+)
+spawn(
+    function()
+        while true do
+            for i, b in pairs(game.Players:GetDescendants()) do
+                if b.Name == "Sword" and b.Parent:IsA("Backpack") and b:IsA("Tool") then
+                    function notify(text)
+                        game.StarterGui:SetCore(
+                            "SendNotification",
+                            {
+                                Title = "CSkull Alert",
+                                Text = text,
+                                Icon = "",
+                                Duration = 10
+                            }
+                        )
+                    end
+                    wait()
+                    notify(b.Parent.Parent.Name .. " has a cskull be cautious when hacking")
+                end
+            end
+            wait(5)
+        end
+    end
+)
