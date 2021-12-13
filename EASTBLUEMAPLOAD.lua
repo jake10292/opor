@@ -31,7 +31,7 @@ elseif game.PlaceId == 6395502253 then -- east blue
    wait(3)
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-754.63147, 35.2570343, 288.651978, -0.996623397, -9.68420935e-08, 0.0821087658, -9.85861774e-08, 1, -1.71869221e-08, -0.0821087658, -2.52236791e-08, -0.996623397)
    wait(2)
-elseif game.PlaceId == 6395502253 then -- new world idk ID
+elseif game.PlaceId == 6069993731 then -- new world idk ID
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7230, 104, -3359)
    wait(2)
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5500, 139, -2636)
