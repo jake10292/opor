@@ -47,4 +47,5 @@ elseif game.PlaceId == 6069993731 then -- new world idk ID
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9844, 42, -2371)
    wait(2)
 end
+wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = start
